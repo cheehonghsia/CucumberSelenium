@@ -9,9 +9,9 @@ Feature: My first Cucumber test
     Given I am on the Zoo website
     When I click on the "contact_link" link
     And Fill in the form with valid data
-      | Field    | Value                  |
-      | Name     | Cheehong               |
-      | Address  | Eerste Oosterparklaan  |
-      | Postcode | 3544AN                 |
-      | Email    | hsia.cheehong@gmailcom |
+      | Field    | Value           |
+      | Name     | John Doe        |
+      | Address  | adres           |
+      | Postcode | postcode        |
+      | Email    | Johnny@gmailcom |
     Then I see a confirmationpage the text "We have your message"
