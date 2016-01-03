@@ -1,13 +1,7 @@
-Feature: My first Cucumber test
-
-  Background: 
-  Given I am on the Zoo website
-
-  Scenario: Test if the title is correct
-    When I click on the "about_link" link
-    Then I see the header displaying "ABOUT"
+Feature: Filling in the Contact form
 
   Scenario: Fill in the Contact Us form with valid info
+    Given I am on the Zoo website
     When I click on the "contact_link" link
     And Fill in the form with valid data
       | Field    | Value           |

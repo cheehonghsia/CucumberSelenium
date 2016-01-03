@@ -14,7 +14,7 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-public class StepDefinition {
+public class Managing_Contact_form {
 
 	private WebDriver driver;
 
@@ -36,12 +36,6 @@ public class StepDefinition {
 	@When("^I click on the \"([^\"]*)\" link$")
 	public void i_click_on_the_link(String link) throws Throwable {
 		driver.findElement(By.id(link)).click();
-	}
-
-	@Then("^I see the header displaying \"([^\"]*)\"$")
-	public void i_see_the_header_displaying(String header) throws Throwable {
-		Assert.assertEquals(header, driver.findElement(By.cssSelector("td.content > h1")).getText());
-
 	}
 
 	@When("^Fill in the form with valid data$")
