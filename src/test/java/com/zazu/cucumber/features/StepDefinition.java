@@ -41,6 +41,7 @@ public class StepDefinition {
 	@Then("^I see the header displaying \"([^\"]*)\"$")
 	public void i_see_the_header_displaying(String header) throws Throwable {
 		Assert.assertEquals(header, driver.findElement(By.cssSelector("td.content > h1")).getText());
+
 	}
 
 	@When("^Fill in the form with valid data$")
